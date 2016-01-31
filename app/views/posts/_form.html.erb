@@ -1,4 +1,4 @@
-<%= form_for(@post) do |f| %>
+ <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -12,26 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class:"form-control form-group", placeholder:"title" %>
   </div>
   <div class="field">
-    <%= f.label :sneakpeak %><br>
-    <%= f.text_field :sneakpeak %>
+    <%= f.text_field :sneakpeak, class:"form-control form-group", placeholder:"sneakpeak" %>
   </div>
   <div class="field">
-    <%= f.label :image %><br>
-    <%= f.text_field :image %>
+    <%= f.text_field :image, class:"form-control form-group", placeholder:"Image URL" %>
   </div>
   <div class="field">
-    <%= f.label :categorie %><br>
-    <%= f.text_field :categorie %>
+    <%= f.select(:categorie, ['Books', 'Business', 'Software'], {}, { :class => 'form-control form-group input-sm' }) %>
   </div>
   <div class="field">
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
+    <%= f.text_area :body, class:"form-control form-group", placeholder:"Body Text" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class:"btn btn-primary" %>
   </div>
 <% end %>

@@ -16,4 +16,29 @@
 
 body {
     padding-top: 75px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title a {
+    color: #252525;
+    text-decoration: none;
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 700;
+    
+}
+
+.sneakpeak {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #666;
+    margin: 12px 0;
+}
+
+.categorie a {
+    font-size: 13px;
+    color: #2093d2;
+    font-weight: 400;
+    margin-bottom: 12px;
 }
