@@ -1,32 +1,42 @@
 <div class="container">
   <div class="row">
-    <% @posts.each do |post| %>
-      <div class="col-sm-3 col-xs-4">
-        <%= link_to post do %>
-          <img src="https://assets.entrepreneur.com/content/3x2/274/20160113181342-marcos-pizza.jpeg" style="width: 100%;">
-        <% end %>
-      </div>
-      <div class="col-sm-6 col-xs-8">
-        <div class="categorie">
-          <%= link_to post do %>
-            <%= post.categorie %>
-          <% end %>
+    <div class="col-sm-9 col-xs-12">
+      <% @posts.each do |post| %>
+        <div class="row">
+          <div class="col-sm-3">
+            <%= link_to post do %>
+              <img src="https://assets.entrepreneur.com/content/3x2/274/20160113181342-marcos-pizza.jpeg" style="width: 100%;">
+            <% end %>
+          </div>
+          <div class="col-sm-9">
+            <div class="categorie">
+              <%= link_to post do %>
+                <%= post.categorie %>
+              <% end %>
+            </div>
+            <div class="title">
+              <%= link_to post do %>
+                <%= post.title %>
+              <% end %>
+            </div>
+            <div class="sneakpeak">
+              <%= post.sneakpeak %>
+            </div>
+            <div class="sneakpeak">
+              Created <%= time_ago_in_words(Date.today - 1) %> ago
+            </div>
+          </div>
         </div>
-        <div class="title">
-          <%= link_to post do %>
-            <%= post.title %>
-          <% end %>
-        </div>
-        <div class="sneakpeak">
-          <%= post.sneakpeak %>
-        </div>
-        <div class="sneakpeak">
-          Created <%= time_ago_in_words(Date.today - 1) %> ago
-        </div>
-      </div>
-        <div class="col-sm-9">
+        <div class="col-sm-12">
           <hr>
         </div>
-    <% end %>
+      <% end %>
+    </div>
+    <div class="col-sm-3 col-xs-hidden">
+      <img src="http://cdn2.hubspot.net/hubfs/53/hub_generated/resized/c7dc2cb5-b9e8-46fd-8537-c1840e38ce28.png">
+    </div>
   </div>
+</div>
+<div class="center">
+  <%= will_paginate @collection, renderer: BootstrapPagination::Rails %>
 </div>
