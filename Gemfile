@@ -17,6 +17,9 @@ gem 'coffee-rails', '~> 4.1.0'
 #Bootstrap Will Paginate
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 
+#Devise Gem
+gem 'devise', '~> 3.5', '>= 3.5.5'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
