@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-sm-3">
             <%= link_to post do %>
-              <img src="https://assets.entrepreneur.com/content/3x2/274/20160113181342-marcos-pizza.jpeg" style="width: 100%;">
+              <img src="<%= post.image %>" style="width: 100%;">
             <% end %>
           </div>
           <div class="col-sm-9">
@@ -33,7 +33,7 @@
       <% end %>
     </div>
     <div class="col-sm-3 col-xs-hidden">
-      <img src="http://cdn2.hubspot.net/hubfs/53/hub_generated/resized/c7dc2cb5-b9e8-46fd-8537-c1840e38ce28.png">
+      <img src="http://cdn2.hubspot.net/hubfs/53/hub_generated/resized/c7dc2cb5-b9e8-46fd-8537-c1840e38ce28.png" style="width: 100%">
     </div>
   </div>
 </div>
