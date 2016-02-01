@@ -1,6 +1,6 @@
 <div class="container">
-  <% @posts.each do |post| %>
-    <div class="row">
+  <div class="row">
+    <% @posts.each do |post| %>
       <div class="col-sm-3 col-xs-4">
         <%= link_to post do %>
           <img src="https://assets.entrepreneur.com/content/3x2/274/20160113181342-marcos-pizza.jpeg" style="width: 100%;">
@@ -24,11 +24,9 @@
           Created <%= time_ago_in_words(Date.today - 1) %> ago
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-9">
-        <hr>
-      </div>
-    </div>
-  <% end %>
+        <div class="col-sm-9">
+          <hr>
+        </div>
+    <% end %>
+  </div>
 </div>

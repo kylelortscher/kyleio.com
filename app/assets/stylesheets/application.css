@@ -28,6 +28,14 @@ body {
     
 }
 
+.title a:hover {
+    color: #252525;
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 700;
+    
+}
+
 .sneakpeak {
     font-size: 16px;
     line-height: 21px;
