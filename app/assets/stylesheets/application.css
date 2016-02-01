@@ -55,7 +55,7 @@ body {
     text-align: center;
 }
 
-.title {
+.title-cta {
     text-align: center;
     font-weight: 900;
 }
@@ -63,4 +63,17 @@ body {
 .cta-right-blog {
     background: #f5f5f5;
     padding: 15px 25px;
+}
+
+.post-body {
+    font-size: 19px;
+    line-height: 40px;
+}
+
+.post-title {
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 12px;
+    font-size: 40px;
+    line-height: 45px;
 }
